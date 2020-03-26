@@ -17,14 +17,14 @@ public class CameraControllerScript : MonoBehaviour {
             newCameraPosition.y = -0.6f;
         }
 
-        if(newCameraPosition.x <= furthestXPos)
+        if(newCameraPosition.x <= furthestXPos) //camera movements not restricted
         {
             newCameraPosition.x = furthestXPos;
         }
-        else
+        /*else
         {
             furthestXPos = newCameraPosition.x;
-        }
+        }*/
 
         newCameraPosition.z = this.transform.position.z;
 
